@@ -2,48 +2,38 @@
 // REF: http://simpleweatherjs.com/
 
 
-var Cheney ='99004'
-var Spokane = '99205'
 
-  // 2. _simpleWeather()_ object
+$('#getZip').click(function() {
+  
+  // stop default, <form> from submitting data
+  event.preventDefault();
+  
+  // get and store data
+  var zip = $('#zip').val();
+  console.log(zip);  
+  
+  // Get Weather
   $.simpleWeather({
     
-    location: '99205', // change zip
-    unit: 'f',
-    
-    // Get _weather_ object
+    location: zip,  
     success: function(weather) {
       
-
-      //Get & output weather
-
-
-      // Get & store temperature
-      var temp = weather.temp;
-      // Get & store city
-      var city = weather.city;
-      //Get & store state
-      var state = weather.region;
-  	//Get & store thumb
-      var thumb = weather.thumbnail;
-      console.log(thumb)
-      
-      // Output to hooks in HTML
-      $('.temp').text(temp);
-      $('.city').text(city);
-      $('.state').text(state);
-      $('.thumb img').attr('src', thumb);
-      
-      
-      // See console for _weather_ object
+      // get weather OK? 
       console.log(weather);
-    },
-  
-    // if error
-    error: function(error) {  
+
+      $('.temp').text(weather.temp);
+      $('.city').text(weather.city);
+      $('.country').text(weather.country);
+    
+    },  
+    error: function(error) {
       $('body').html('<p>' + error + '</p>');
     }
   
   });
-
+  
+  // clear zip
+  $('#getWeather').val('');
+  
+});
 
