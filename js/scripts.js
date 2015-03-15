@@ -21,9 +21,16 @@ $('#getZip').click(function() {
       // get weather OK? 
       console.log(weather);
 
+      $('.currently').text(weather.currently);
       $('.temp').text(weather.temp);
+      $('.unit').text(weather.units.temp);
       $('.city').text(weather.city);
-      $('.country').text(weather.country);
+      $('.state').text(weather.region);
+      $('.high').text(weather.high);
+      $('.low').text(weather.low);
+      $('.rise').text(weather.sunrise);
+      $('.set').text(weather.sunset);
+
     
     },  
     error: function(error) {
