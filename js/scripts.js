@@ -26,9 +26,6 @@ $('#getZip').click(function() {
       $('.state').text(weather.region);
       $('.high').text(weather.high);
       $('.low').text(weather.low);
-      $('.rise').text(weather.sunrise);
-      $('.set').text(weather.sunset);
-
 
     
 

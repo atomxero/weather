@@ -9,42 +9,38 @@
 
   <title>Weather App</title>
 
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 
 <body>
+  <article class="box">
 
   <!-- Docs at http://http://simpleweatherjs.com -->
 
 <form action="" class="ui form">
   <p class="field">
-    <label>Enter a Zip</label>
-    <input type="text" id="zip">
+   
+    <input type="text" id="zip" placeholder="Zip Code Please">
   </p>
-  <button id="getZip">Weather</button>
+  <button id="getZip">Show Me the Weather</button>
   </form>  
 
+    <div class="temp"></div><span class="unit"></span>
+    <div class="city"> </div><span class="state"></span>
+        <div class="currently"></div>
+        <div class="high"></div>
+        <div class="low"></div>
+       
 
-  <h2 class="city"> </h2>
-  <h2 class="state"> </h2>
- <ul> 
-  <li class="currently"></li>
-  <li class="temp"></li>
-   <li class="unit"></li>
-   <li class="high"> </li>
-   <li class="low"> </li>
-  <li class="rise"> </li>
-  <li class="set"></li>
-</ul> 
-  
   
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   <script src="js/semantic.min.js"></script>
   <script src="js/weather.js"></script>
   <script src="js/scripts.js"></script>
 
+  </article>
 </body>
 </html>
