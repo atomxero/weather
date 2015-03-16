@@ -1,5 +1,3 @@
-// REF: http://foundation.zurb.com/docs/
-// REF: http://simpleweatherjs.com/
 
 
 
@@ -15,7 +13,7 @@ $('#getZip').click(function() {
   // Get Weather
   $.simpleWeather({
     
-    location: zip,  
+    location: zip, 
     success: function(weather) {
       
       // get weather OK? 
@@ -30,6 +28,20 @@ $('#getZip').click(function() {
       $('.low').text(weather.low);
       $('.rise').text(weather.sunrise);
       $('.set').text(weather.sunset);
+
+
+      if (weather.sunrise = sunrise) {
+        
+        $('body').addClass('day');
+        
+      } 
+            
+      if (weather.code >= sunset && weather.code <= sunrise) {
+        
+        $('body').addClass('night');
+        
+      } 
+
 
     
     },  
