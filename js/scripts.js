@@ -30,18 +30,7 @@ $('#getZip').click(function() {
       $('.set').text(weather.sunset);
 
 
-      if (weather.sunrise = sunrise) {
-        
-        $('body').addClass('day');
-        
-      } 
-            
-      if (weather.code >= sunset && weather.code <= sunrise) {
-        
-        $('body').addClass('night');
-        
-      } 
-
+    
 
     
     },  
