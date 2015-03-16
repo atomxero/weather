@@ -48,7 +48,7 @@ button{
    
   }
   .state {
-    display: inline;
+    text-align: center;
     font-size: 3em;
   }
 
@@ -57,8 +57,11 @@ button{
       font-size: 2em;
    }
   .high{
-      text-align: center;
-    }
-  .low{  text-align: center;
-}
+      display: inline;
+      padding-left: 220px;    }
+
+
+  .low{  
+      display: inline;
+      padding-left: 20px}
   

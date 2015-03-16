@@ -24,7 +24,7 @@ $('#getZip').click(function() {
       $('.unit').text(weather.units.temp);
       $('.city').text(weather.city);
       $('.state').text(weather.region);
-      $('.high').text(weather.high);
+      $('.high').text (weather.high);
       $('.low').text(weather.low);
 
     
